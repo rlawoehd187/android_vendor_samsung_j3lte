@@ -193,6 +193,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/j3ltekx/proprietary/lib/libsomxnaace.so:system/lib/libsomxnaace.so \
     vendor/samsung/j3ltekx/proprietary/lib/libsomxvp8d.so:system/lib/libsomxvp8d.so \
     vendor/samsung/j3ltekx/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
+    vendor/samsung/j3ltekx/proprietary/vendor/lib/com.qualcomm.qti.ant@1.0_vendor.so:system/vendor/lib/com.qualcomm.qti.ant@1.0_vendor.so \
     vendor/samsung/j3ltekx/proprietary/vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so:system/vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so \
     vendor/samsung/j3ltekx/proprietary/vendor/lib/drm/libdrmprplugin.so:system/vendor/lib/drm/libdrmprplugin.so \
     vendor/samsung/j3ltekx/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \

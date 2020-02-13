@@ -19,6 +19,16 @@ LOCAL_PATH := $(call my-dir)
 ifeq ($(TARGET_DEVICE),j3ltekx)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := com.qualcomm.qti.ant@1.0
+LOCAL_MODULE_OWNER := samsung
+LOCAL_SRC_FILES := proprietary/lib/com.qualcomm.qti.ant@1.0.so
+LOCAL_MULTILIB := 32
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := libloc_api_v02
 LOCAL_MODULE_OWNER := samsung
 LOCAL_SRC_FILES := proprietary/lib/libloc_api_v02.so
