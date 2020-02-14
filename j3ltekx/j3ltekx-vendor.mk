@@ -16,13 +16,15 @@
 
 PRODUCT_COPY_FILES += \
     vendor/samsung/j3ltekx/proprietary/lib/hw/sensors.vendor.msm8916.so:system/lib/hw/sensors.vendor.msm8916.so \
-    vendor/samsung/j3ltekx/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
-    vendor/samsung/j3ltekx/proprietary/lib/libsec-ril-dsds.so:system/lib/libsec-ril-dsds.so
+    vendor/samsung/j3ltekx/proprietary/vendor/lib/libsec-ril.so:system/vendor/lib/libsec-ril.so \
+    vendor/samsung/j3ltekx/proprietary/vendor/lib/libsec-ril-dsds.so:system/vendor/lib/libsec-ril-dsds.so \
+    vendor/samsung/j3ltekx/proprietary/vendor/bin/pm-proxy:system/vendor/bin/pm-proxy \
+    vendor/samsung/j3ltekx/proprietary/vendor/bin/pm-service:system/vendor/bin/pm-service \
 
 # Import j3-common.
 
 PRODUCT_COPY_FILES += \
-    vendor/samsung/j3ltekx/proprietary/bin/qseecomd:system/vendor/bin/qseecomd \
+    vendor/samsung/j3ltekx/proprietary/vendor/bin/qseecomd:system/vendor/bin/qseecomd \
     vendor/samsung/j3ltekx/proprietary/etc/Bluetooth_cal.acdb:system/etc/Bluetooth_cal.acdb \
     vendor/samsung/j3ltekx/proprietary/etc/General_cal.acdb:system/etc/General_cal.acdb \
     vendor/samsung/j3ltekx/proprietary/etc/Global_cal.acdb:system/etc/Global_cal.acdb \
@@ -115,28 +117,28 @@ PRODUCT_COPY_FILES += \
 # Import msm8916-common.
 
 PRODUCT_COPY_FILES += \
-    vendor/samsung/j3ltekx/proprietary/bin/adsprpcd:system/vendor/bin/adsprpcd \
-    vendor/samsung/j3ltekx/proprietary/bin/diag_mdlog:system/vendor/bin/diag_mdlog \
-    vendor/samsung/j3ltekx/proprietary/bin/diag_uart_log:system/vendor/bin/diag_uart_log \
-    vendor/samsung/j3ltekx/proprietary/bin/fm_qsoc_patches:system/vendor/bin/fm_qsoc_patches \
-    vendor/samsung/j3ltekx/proprietary/bin/fmconfig:system/bin/fmconfig \
-    vendor/samsung/j3ltekx/proprietary/bin/ftm_ptt:system/bin/ftm_ptt \
-    vendor/samsung/j3ltekx/proprietary/bin/irsc_util:system/vendor/bin/irsc_util \
-    vendor/samsung/j3ltekx/proprietary/bin/loc_launcher:system/vendor/bin/loc_launcher \
-    vendor/samsung/j3ltekx/proprietary/bin/mm-qcamera-daemon:system/vendor/bin/mm-qcamera-daemon \
-    vendor/samsung/j3ltekx/proprietary/bin/netmgrd:system/vendor/bin/netmgrd \
-    vendor/samsung/j3ltekx/proprietary/bin/port-bridge:system/vendor/bin/port-bridge \
-    vendor/samsung/j3ltekx/proprietary/bin/ptt_socket_app:system/bin/ptt_socket_app \
-    vendor/samsung/j3ltekx/proprietary/bin/qcom-system-daemon:system/vendor/bin/qcom-system-daemon \
-    vendor/samsung/j3ltekx/proprietary/bin/qmuxd:system/vendor/bin/qmuxd \
-    vendor/samsung/j3ltekx/proprietary/bin/radish:system/bin/radish \
-    vendor/samsung/j3ltekx/proprietary/bin/rmt_storage:system/vendor/bin/rmt_storage \
-    vendor/samsung/j3ltekx/proprietary/bin/ssr_diag:system/vendor/bin/ssr_diag \
-    vendor/samsung/j3ltekx/proprietary/bin/ssr_setup:system/vendor/bin/ssr_setup \
-    vendor/samsung/j3ltekx/proprietary/bin/subsystem_ramdump:system/vendor/bin/subsystem_ramdump \
-    vendor/samsung/j3ltekx/proprietary/bin/time_daemon:system/vendor/bin/time_daemon \
-    vendor/samsung/j3ltekx/proprietary/bin/wdsdaemon:system/bin/wdsdaemon \
-    vendor/samsung/j3ltekx/proprietary/bin/wlandutservice:system/bin/wlandutservice \
+    vendor/samsung/j3ltekx/proprietary/vendor/bin/adsprpcd:system/vendor/bin/adsprpcd \
+    vendor/samsung/j3ltekx/proprietary/vendor/bin/diag_mdlog:system/vendor/bin/diag_mdlog \
+    vendor/samsung/j3ltekx/proprietary/vendor/bin/diag_uart_log:system/vendor/bin/diag_uart_log \
+    vendor/samsung/j3ltekx/proprietary/vendor/bin/fm_qsoc_patches:system/vendor/bin/fm_qsoc_patches \
+    vendor/samsung/j3ltekx/proprietary/vendor/bin/fmconfig:system/vendor/bin/fmconfig \
+    vendor/samsung/j3ltekx/proprietary/vendor/bin/ftm_ptt:system/vendor/bin/ftm_ptt \
+    vendor/samsung/j3ltekx/proprietary/vendor/bin/irsc_util:system/vendor/bin/irsc_util \
+    vendor/samsung/j3ltekx/proprietary/vendor/bin/loc_launcher:system/vendor/bin/loc_launcher \
+    vendor/samsung/j3ltekx/proprietary/vendor/bin/mm-qcamera-daemon:system/vendor/bin/mm-qcamera-daemon \
+    vendor/samsung/j3ltekx/proprietary/vendor/bin/netmgrd:system/vendor/bin/netmgrd \
+    vendor/samsung/j3ltekx/proprietary/vendor/bin/port-bridge:system/vendor/bin/port-bridge \
+    vendor/samsung/j3ltekx/proprietary/vendor/bin/ptt_socket_app:system/vendor/bin/ptt_socket_app \
+    vendor/samsung/j3ltekx/proprietary/vendor/bin/qcom-system-daemon:system/vendor/bin/qcom-system-daemon \
+    vendor/samsung/j3ltekx/proprietary/vendor/bin/qmuxd:system/vendor/vendor/bin/qmuxd \
+    vendor/samsung/j3ltekx/proprietary/vendor/bin/radish:system/vendor/bin/radish \
+    vendor/samsung/j3ltekx/proprietary/vendor/bin/rmt_storage:system/vendor/bin/rmt_storage \
+    vendor/samsung/j3ltekx/proprietary/vendor/bin/ssr_diag:system/vendor/bin/ssr_diag \
+    vendor/samsung/j3ltekx/proprietary/vendor/bin/ssr_setup:system/vendor/bin/ssr_setup \
+    vendor/samsung/j3ltekx/proprietary/vendor/bin/subsystem_ramdump:system/vendor/bin/subsystem_ramdump \
+    vendor/samsung/j3ltekx/proprietary/vendor/bin/time_daemon:system/vendor/bin/time_daemon \
+    vendor/samsung/j3ltekx/proprietary/vendor/bin/wdsdaemon:system/bin/wdsdaemon \
+    vendor/samsung/j3ltekx/proprietary/vendor/bin/wlandutservice:system/bin/wlandutservice \
     vendor/samsung/j3ltekx/proprietary/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
     vendor/samsung/j3ltekx/proprietary/cameradata/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv \
     vendor/samsung/j3ltekx/proprietary/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
@@ -272,8 +274,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/j3ltekx/proprietary/vendor/lib/libperipheral_client.so:system/vendor/lib/libperipheral_client.so \
     vendor/samsung/j3ltekx/proprietary/vendor/lib/libprdrmdecrypt.so:system/vendor/lib/libprdrmdecrypt.so \
     vendor/samsung/j3ltekx/proprietary/vendor/lib/libqomx_jpegdec.so:system/vendor/lib/libqomx_jpegdec.so \
+    vendor/samsung/j3ltekx/proprietary/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \
+    vendor/samsung/j3ltekx/proprietary/vendor/lib/libqdp.so:system/vendor/lib/libqdp.so \
     vendor/samsung/j3ltekx/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
     vendor/samsung/j3ltekx/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
+    vendor/samsung/j3ltekx/proprietary/vendor/lib/libril-qc-qmi-1.so:system/vendor/lib/libril-qc-qmi-1.so \
     vendor/samsung/j3ltekx/proprietary/vendor/lib/librpmb.so:system/vendor/lib/librpmb.so \
     vendor/samsung/j3ltekx/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
     vendor/samsung/j3ltekx/proprietary/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
